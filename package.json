@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "postcss ./src/input.css -o ./dist/output.css --watch"
+    "dev": "postcss ./src/input.css -o ./dist/output.css --watch",
+    "minify": "npx tailwindcss -o ./dist/minified.css --minify"
   },
   "repository": {
     "type": "git",
