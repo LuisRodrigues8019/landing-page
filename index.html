@@ -7,6 +7,81 @@
     <link rel="stylesheet" href="dist/output.css" />
   </head>
   <body>
+    <section class="bg-[url('/ressources/stylish-mesh-bg.jpg')] relative">
+      <!-- Navbar -->
+
+      <nav
+        class="fixed top-0 z-20 bg-gray-50 p-4 w-full grid grid-cols-none shadow-md md:max-w-7xl md:grid-cols-menu md:shadow-none md:relative md:mx-auto md:bg-transparent"
+      >
+        <div class="flex justify-between items-center md:justify-center">
+          <a href="#accueil">
+            <img
+              src="ressources/RocketLogo.svg"
+              alt="rocket logo"
+              class="w-12"
+            />
+          </a>
+
+          <button
+            class="icone-toggle bg-white rounded-md p-2 ring-1 ring-black ring-opacity-20 md:hidden"
+          >
+            <img
+              src="ressources/menu.svg"
+              alt="icône hamburger"
+              class="h-6 w-6"
+            />
+          </button>
+        </div>
+
+        <ul
+          class="toggle-menu hidden px-1 pt-6 bg-gray-50 flex flex-col md:flex md:bg-transparent md:pt-0 md:flex-row md:space-x-10 md:w-auto md:items-center md:justify-center"
+        >
+          <li class="py-2 text-center border-t border-gray-200 md:border-0">
+            <a
+              href="#accueil"
+              class="font-medium text-lg text-zinc-800 hover:text-gray-900"
+              >Accueil</a
+            >
+          </li>
+
+          <li class="py-2 text-center border-t border-gray-200 md:border-0">
+            <a
+              href="#services"
+              class="font-medium text-lg text-zinc-800 hover:text-gray-900"
+              >Services</a
+            >
+          </li>
+
+          <li class="py-2 text-center border-t border-gray-200 md:border-0">
+            <a
+              href="#tarifs"
+              class="font-medium text-lg text-zinc-800 hover:text-gray-900"
+              >Nos Tarifs</a
+            >
+          </li>
+
+          <li
+            class="py-2 text-center border-t border-b border-gray-200 md:border-0"
+          >
+            <a
+              href="#contact"
+              class="font-medium text-lg text-zinc-800 hover:text-gray-900"
+              >Contact</a
+            >
+          </li>
+        </ul>
+
+        <div
+          class="toggle-menu hidden flex justify-center items-center mt-6 md:mt-0 md:justify-end md:flex"
+        >
+          <a
+            href="#"
+            class="shadow-md px-6 py-2 border font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50 text-center w-40"
+            >Log in</a
+          >
+        </div>
+      </nav>
+    </section>
     <script src="app.js"></script>
   </body>
 </html>
